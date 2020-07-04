@@ -1,0 +1,58 @@
+.social {
+  display: flex;
+  justify-content: center;
+}
+
+.social__item {
+  margin: 0 5px;
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+  @include timingFunction(background-color);
+
+  &:hover,
+  &:focus {
+    background-color: $accentColor;
+  }
+}
+
+.social__icon {
+  width: 20px;
+  height: 20px;
+
+  @include timingFunction(fill);
+}
+
+// Наша команда
+.social__icon {
+  fill: $formColor;
+
+  .social__link:hover & {
+    fill: $whiteColor;
+  }
+}
+
+// Footer
+.social__link {
+  .page-footer__social & {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $accentColor;
+  }
+}
+
+.social__icon {
+  .page-footer__social & {
+    fill: $whiteColor;
+  }
+}

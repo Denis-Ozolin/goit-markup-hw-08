@@ -1,0 +1,36 @@
+body {
+  box-sizing: border-box;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+
+  color: #757575;
+  background-color: $whiteColor;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+// СТИЛИ ЗАГОЛОВКОВ
+.services__title,
+.team__title,
+.customer__title {
+  @extend %titleSection;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
+}

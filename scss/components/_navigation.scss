@@ -1,0 +1,143 @@
+.site-nav {
+  display: flex;
+  align-items: center;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    justify-content: space-between;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
+// Бургер меню
+.site-nav__btn {
+  margin-left: auto;
+
+  border: none;
+  background-color: transparent;
+  fill: $secTextColor;
+  cursor: pointer;
+
+  @include timingFunction(fill);
+
+  &:hover,
+  &:focus {
+    fill: $accentColor;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.site-nav__btn .site-nav__icon--cross {
+  display: none;
+}
+
+.site-nav__btn.site-nav__btn--is-open .site-nav__icon--cross {
+  display: block;
+}
+
+.site-nav__btn.site-nav__btn--is-open .site-nav__icon--menu {
+  display: none;
+}
+
+// Контейнер навигация + контакты
+.site-nav__container {
+  @media screen and (max-width: 767px) {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    text-align: center;
+
+    background: $whiteColor;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.08),
+      0px 4px 8px rgba(0, 0, 0, 0.04);
+
+    &.site-nav__container--is-open {
+      display: block;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
+
+  // @media screen and (min-width: 1200px) {
+
+  // }
+}
+
+.site-nav__list {
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-bottom: 0;
+  }
+}
+
+.site-nav__item {
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+}
+
+.site-nav__link {
+  @extend %mobileNavText;
+  color: $secTextColor;
+
+  @include timingFunction(color);
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-size: 14px;
+    line-height: 1.14;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
+}
+
+.site-nav__link--current {
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    height: 4px;
+    width: 100%;
+
+    border-radius: 2px;
+    background-color: $accentColor;
+
+    @media screen and (min-width: 768px) {
+      bottom: 0px;
+    }
+  }
+}

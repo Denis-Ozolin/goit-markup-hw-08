@@ -1,0 +1,74 @@
+// Переменные
+@import "./utility/variable";
+
+// Миксины
+@import "./utility/mixins";
+
+// Плейсхолдеры
+@import "./utility/placeholder";
+
+// Обнуление стилей
+@import "./base/reset";
+
+//Общие стили
+@import "./base/common";
+
+// Скрытие
+@import "./utility/visually-hidden";
+
+// Модальное окно
+@import "./components/modal";
+
+// Обертки
+@import "./base/wrapper";
+
+// Кнопки
+@import "./components/button";
+
+// Социальные сети
+@import "./components/social";
+
+// СЕКЦИИ
+
+// СЕКЦИЯ ШАПКА САЙТА
+@import "./components/page-header";
+
+// Логотип
+@import "./components/logo";
+
+// Навигация
+@import "./components/navigation";
+
+// Контакты
+@import "./components/contacts";
+
+// СЕКЦИЯ ГЕРОЙ
+// Оверлєй
+@import "./components/hero-overlay";
+
+// Секция
+@import "./components/hero";
+
+// СЕКЦИЯ ФУНКУИИ
+@import "./components/features";
+
+// СЕКЦИЯ - ЧЕМ МЫ ЗАНИМАЕМСЯ
+@import "./components/services";
+
+// СЕКЦИЯ НАША КОМАНДА
+@import "./components/team";
+
+// СЕКЦИЯ ПОСТОЯННЫЕ КЛИЕНТЫ
+@import "./components/customer";
+
+// СЕКЦИЯ ПОДВАЛ
+@import "./components/page-footer";
+
+// Обратная связь
+@import "./components/feedback";
+
+// ПОРТФОЛИО
+@import "./components/portfolio";
+
+// Продуктовые карточки
+@import "./components/product";

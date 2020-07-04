@@ -1,0 +1,36 @@
+.site-logo {
+  display: block;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16;
+
+  color: $accentColor;
+
+  &__part--black {
+    color: black;
+  }
+
+  &__part--white {
+    color: $whiteColor;
+  }
+
+  .page-footer & {
+    margin-bottom: 20px;
+  }
+  @media screen and (max-width: 767px) {
+    .page-header & {
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+
+    .page-header & {
+      margin-right: 85px;
+    }
+  }
+}

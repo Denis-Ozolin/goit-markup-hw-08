@@ -1,0 +1,115 @@
+// Общие
+.contacts-top__link,
+.contacts-bot__link {
+  @include timingFunction(color);
+
+  &:hover,
+  &:focus {
+    color: $accentColor;
+    fill: $accentColor;
+  }
+}
+
+// header-contacts
+.contacts-top {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: 84px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: auto;
+  }
+}
+
+.contacts-top__item {
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+
+.contacts-top__link {
+  display: inline-flex;
+  align-items: center;
+  @extend %mobileNavText;
+
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
+
+.contacts-top__icon {
+  margin-right: 10px;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 8px;
+  }
+
+  fill: currentColor;
+  @include timingFunction(fill);
+
+  &:hover,
+  &:focus {
+    fill: $accentColor;
+    color: $accentColor;
+  }
+}
+
+// footer-contacts
+.contacts-bot__item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.contacts-bot__link {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+// header-contacts
+// .contacts-top {
+//   display: none;
+
+//   @media screen and (min-width: 768px) and (max-width: 1199px) {
+//     display: block;
+//   }
+
+//   @media screen and (min-width: 1200px) {
+//     display: flex;
+//     margin-left: auto;
+//   }
+// }
+
+// @media screen and (min-width: 768px) and (max-width: 1199px) {
+//   font-size: 12px;
+// }
+
+// @media screen and (min-width: 1200px) {
+//   font-size: 14px;
+//   line-height: 1.14;
+// }
+
+// &:first-child {
+//   @media screen and (min-width: 1200px) {
+//     margin-right: 30px;
+//   }
+// }
+// }

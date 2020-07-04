@@ -1,0 +1,29 @@
+// Заголовки подсекций
+
+%inviteText {
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+// Заголовки секций < 1200px
+%titleSection {
+  margin-bottom: 30px;
+
+  text-align: center;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+
+  color: $secTextColor;
+}
+
+// Текст для навигации (мобильная версия)
+%mobileNavText {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+}
