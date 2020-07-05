@@ -5,6 +5,14 @@
   width: 100%;
   height: 100%;
 
+  overflow-y: scroll;
+
+  padding: 94px 15px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding: 208px 0;
+  }
+
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -18,14 +26,31 @@
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 528px;
+    max-width: 528px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  // @media screen and (max-width: 768px) and (max-width: 1199px) {
+  //   margin-top: 208px;
+  // }
+
   display: flex;
   flex-direction: column;
-  max-width: 528px;
+
+  max-width: 450px;
   padding: 40px;
+
+  position: relative;
 
   background-color: $whiteColor;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -68,6 +93,10 @@
   line-height: 1.15;
 
   color: $secTextColor;
+
+  @media screen and (max-width: 1199px) {
+    line-height: 1.5;
+  }
 }
 
 .modal-label {
@@ -190,7 +219,7 @@
 
 .custom-check {
   display: block;
-  width: 15px;
+  min-width: 16px;
   height: 15px;
   margin-right: 9px;
 
@@ -210,6 +239,17 @@
 .agreement-check:checked + .custom-check {
   background-color: $accentColor;
   border-color: $accentColor;
+}
+
+.terms {
+  @media screen and (min-width: 480px) {
+    min-width: 370px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    font-size: 12px;
+    line-height: 1.16;
+  }
 }
 
 .conditions {
