@@ -125,6 +125,8 @@
 .site-nav__link--current {
   position: relative;
 
+  @extend %mobileNavText;
+
   &:after {
     content: "";
     position: absolute;
