@@ -46,6 +46,7 @@
 // Контейнер навигация + контакты
 .site-nav__container {
   @media screen and (max-width: 767px) {
+    z-index: 1;
     display: none;
     position: absolute;
     top: 100%;

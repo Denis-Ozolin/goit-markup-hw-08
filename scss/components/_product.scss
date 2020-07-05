@@ -1,6 +1,4 @@
 .card-set {
-  background-color: green;
-
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -44,14 +42,15 @@
 }
 
 .product__thumb {
-  // position: relative;
+  position: relative;
 
   overflow: hidden;
 }
 
 .product__desc {
   // TEST
-  display: none;
+  // display: none;
+
   position: absolute;
   left: 0;
   top: 0;
