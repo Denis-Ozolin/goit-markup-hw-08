@@ -84,14 +84,13 @@
     </header>
     <main>
       <!-- СЕКЦИЯ ГЕРОЙ -->
-      <div class="overlay">
-        <section class="hero">
-          <h1 class="hero__title">
-            эффективные решения для вашего бизнеса
-          </h1>
-          <button class="btn" data-modal-open>Заказать услугу</button>
-        </section>
-      </div>
+      <section class="hero">
+        <h1 class="hero__title">
+          эффективные решения для вашего бизнеса
+        </h1>
+
+        <button class="btn" data-modal-open>Заказать услугу</button>
+      </section>
 
       <!-- СЕКЦИЯ ФУНКЦИИ -->
       <section class="features">
@@ -159,10 +158,13 @@
               <div class="services__thumb">
                 <img
                   class="services__img"
-                  src="./images/notebook.jpg"
+                  srcset="
+                    ./images/laptop.jpg   1x,
+                    ./images/laptop2x.jpg 2x,
+                    ./images/laptop3x.jpg 3x
+                  "
+                  src="./images/laptop.jpg"
                   alt="Ноутбук"
-                  width="370"
-                  height="294"
                 />
                 <p class="services__desc">
                   Десктопные приложения
@@ -173,10 +175,13 @@
               <div class="services__thumb">
                 <img
                   class="services__img"
+                  srcset="
+                    ./images/phone.jpg   1x,
+                    ./images/phone2x.jpg 2x,
+                    ./images/phone3x.jpg 3x
+                  "
                   src="./images/phone.jpg"
                   alt="Смартфон"
-                  width="370"
-                  height="294"
                 />
                 <p class="services__desc">
                   Мобильные приложения
@@ -187,10 +192,13 @@
               <div class="services__thumb">
                 <img
                   class="services__img"
+                  srcset="
+                    ./images/monitor.jpg 1x,
+                    ./images/monitor.jpg 2x,
+                    ./images/monitor.jpg 3x
+                  "
                   src="./images/monitor.jpg"
                   alt="Монитор"
-                  width="370"
-                  height="294"
                 />
                 <p class="services__desc">
                   Дизайнерские решения
@@ -206,13 +214,18 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__card">
-              <img
-                class="team__img"
-                src="./images/john.jpg"
-                alt="Николай Кучеренко"
-                width="450"
-                height="320"
-              />
+              <div class="team__thumb">
+                <img
+                  class="team__img"
+                  srcset="
+                    ./images/nic.jpg   1x,
+                    ./images/nic2x.jpg 2x,
+                    ./images/nic3x.jpg 3x
+                  "
+                  src="./images/nic.jpg"
+                  alt="Николай Кучеренко"
+                />
+              </div>
               <div class="team__content">
                 <h4 class="team__member">Николай Кучеренко</h4>
                 <p class="team__profession">Product Designer</p>
@@ -265,13 +278,20 @@
               </div>
             </li>
             <li class="team__card">
-              <img
-                class="team__img"
-                src="./images/marta.jpg"
-                alt="Ольга Иванова"
-                width="450"
-                height="320"
-              />
+              <div class="team__thumb">
+                <img
+                  class="team__img"
+                  srcset="
+                    ./images/olha.jpg   1x,
+                    ./images/olha2x.jpg 2x,
+                    ./images/olha3x.jpg 3x
+                  "
+                  src="./images/olha.jpg"
+                  alt="Ольга Иванова"
+                  width="450"
+                  height="320"
+                />
+              </div>
               <div class="team__content">
                 <h4 class="team__member">Ольга Иванова</h4>
                 <p class="team__profession">Frontend Developer</p>
@@ -324,13 +344,20 @@
               </div>
             </li>
             <li class="team__card">
-              <img
-                class="team__img"
-                src="./images/robert.jpg"
-                alt="Андрей Шевченко"
-                width="450"
-                height="320"
-              />
+              <div class="team__thumb">
+                <img
+                  class="team__img"
+                  srcset="
+                    ./images/andre.jpg   1x,
+                    ./images/andre2x.jpg 2x,
+                    ./images/andre3x.jpg 3x
+                  "
+                  src="./images/andre.jpg"
+                  alt="Андрей Шевченко"
+                  width="450"
+                  height="320"
+                />
+              </div>
               <div class="team__content">
                 <h4 class="team__member">Андрей Шевченко</h4>
                 <p class="team__profession">Marketing</p>
@@ -383,13 +410,20 @@
               </div>
             </li>
             <li class="team__card">
-              <img
-                class="team__img"
-                src="./images/martin.jpg"
-                alt="Иван Николаев"
-                width="450"
-                height="320"
-              />
+              <div class="team__thumb">
+                <img
+                  class="team__img"
+                  srcset="
+                    ./images/ivan.jpg   1x,
+                    ./images/ivan2x.jpg 2x,
+                    ./images/ivan3x.jpg 3x
+                  "
+                  src="./images/ivan.jpg"
+                  alt="Иван Николаев"
+                  width="450"
+                  height="320"
+                />
+              </div>
               <div class="team__content">
                 <h4 class="team__member">Иван Николаев</h4>
                 <p class="team__profession">UI Designer</p>

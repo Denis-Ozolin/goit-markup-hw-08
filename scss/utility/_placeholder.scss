@@ -27,3 +27,13 @@
   line-height: 1.16;
   letter-spacing: 0.02em;
 }
+
+// Стили для шаблона изображений
+%images {
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: top;
+}

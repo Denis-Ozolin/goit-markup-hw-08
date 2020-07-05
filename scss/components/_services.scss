@@ -21,6 +21,11 @@
 
 .services__thumb {
   position: relative;
+  height: 294px;
+}
+
+.services__img {
+  @extend %images;
 }
 
 .services__desc {

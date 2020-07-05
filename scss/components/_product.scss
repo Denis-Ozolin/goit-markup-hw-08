@@ -43,8 +43,13 @@
 
 .product__thumb {
   position: relative;
+  height: 294px;
 
   overflow: hidden;
+}
+
+.product__img {
+  @extend %images;
 }
 
 .product__desc {
