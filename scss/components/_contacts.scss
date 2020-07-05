@@ -36,6 +36,7 @@
   }
 
   @media screen and (min-width: 1200px) {
+    display: inline-flex;
     &:not(:last-child) {
       margin-right: 30px;
     }

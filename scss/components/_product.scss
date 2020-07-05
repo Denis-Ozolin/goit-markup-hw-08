@@ -44,12 +44,14 @@
 }
 
 .product__thumb {
-  position: relative;
+  // position: relative;
 
   overflow: hidden;
 }
 
 .product__desc {
+  // TEST
+  display: none;
   position: absolute;
   left: 0;
   top: 0;
