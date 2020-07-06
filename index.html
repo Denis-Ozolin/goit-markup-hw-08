@@ -621,57 +621,61 @@
     </footer>
 
     <!-- МОДАЛЬНОЕ ОКНО -->
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop backdrop--is-hidden" data-modal>
       <form class="modal">
-        <button class="modal-close-btn" data-modal-close>
-          <svg class="icon-close" width="12" height="12">
+        <button class="btn-close" data-modal-close>
+          <svg class="btn-close__icon" width="12" height="12">
             <use href="./images/sprite.svg#icon-close"></use>
           </svg>
         </button>
-        <b class="modal-heading">Оставьте свои данные, мы вам перезвоним</b>
-        <label class="modal-label">
-          <input class="modal-input" placeholder=" " type="text" name="name" />
-          <svg class="label-icon" width="13" height="13">
+        <b class="modal__title">Оставьте свои данные, мы вам перезвоним</b>
+        <label class="label">
+          <input class="label__input" placeholder=" " type="text" name="name" />
+          <svg class="label__icon" width="13" height="13">
             <use href="./images/sprite.svg#icon-person"></use>
           </svg>
-          <span class="label-name">Имя</span>
+          <span class="label__name">Имя</span>
         </label>
-        <label class="modal-label">
-          <input class="modal-input" placeholder=" " type="tel" name="tel" />
-          <svg class="label-icon" width="15" height="12">
+        <label class="label">
+          <input class="label__input" placeholder=" " type="tel" name="tel" />
+          <svg class="label__icon" width="15" height="12">
             <use href="./images/sprite.svg#icon-phone"></use>
           </svg>
-          <span class="label-name">Телефон</span>
+          <span class="label__name">Телефон</span>
         </label>
-        <label class="modal-label">
+        <label class="label">
           <input
-            class="modal-input"
+            class="label__input"
             placeholder=" "
             type="email"
             name="email"
           />
-          <svg class="label-icon" width="15" height="12">
+          <svg class="label__icon" width="15" height="12">
             <use href="./images/sprite.svg#icon-email"></use>
           </svg>
-          <span class="label-name">Почта</span>
+          <span class="label__name">Почта</span>
         </label>
-        <label class="modal-label">
+        <label class="label">
           <textarea
-            class="modal-textarea"
+            class="label__textarea"
             name="comment"
             placeholder=" "
           ></textarea>
-          <span class="textarea-name">Комментарий</span>
+          <span class="label__textarea-name">Комментарий</span>
         </label>
-        <label class="modal-agreement">
-          <input type="checkbox" name="agreement" class="agreement-check" />
-          <span class="custom-check"></span>
-          <span class="terms"
+        <label class="modal__agreement">
+          <input
+            type="checkbox"
+            name="agreement"
+            class="modal__agreement--check"
+          />
+          <span class="modal__custom-check"></span>
+          <span class="modal__terms"
             >Соглашаюсь с рассылкой и принимаю
-            <a href="" class="conditions">Условия договора</a>
+            <a href="" class="modal__conditions">Условия договора</a>
           </span>
         </label>
-        <button class="order-btn btn modal-btn">Отправить</button>
+        <button class="btn modal__btn">Отправить</button>
       </form>
     </div>
 
